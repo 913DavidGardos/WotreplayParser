@@ -10,7 +10,12 @@
 
     <name>WotreplayParser Library</name>
     <description>A java library for extracting battle information from .wotreplay files.</description>
-
+    <distributionManagement>
+        <repository>
+            <id>my-repo</id>
+            <url>https://myrepo.example.com/maven2</url>
+        </repository>
+    </distributionManagement>
     <dependencies>
         <!-- Add your dependencies here -->
         <dependency>
