@@ -21,11 +21,20 @@ This library provides a simple interface to access the key information stored wi
 #### Maven
 To use the WOTReplay Parser library in your project, add the following dependency to your pom.xml:
 ```
-<dependency>
-    <groupId>custom.wotreplayparser.library</groupId>
-    <artifactId>WotreplayParser</artifactId>
-    <version>1.1-SNAPSHOT</version>
-</dependency>
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependencies>
+    <dependency>
+        <groupId>com.github.913DavidGardos</groupId>
+        <artifactId>WotreplayParser</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+</dependencies>
 ```
 
 ### Direct Download
