@@ -22,9 +22,9 @@ This library provides a simple interface to access the key information stored wi
 To use the WOTReplay Parser library in your project, add the following dependency to your pom.xml:
 ```
 <dependency>
-    <groupId>com.example</groupId>
-    <artifactId>wotreplay-parser</artifactId>
-    <version>1.0.0</version>
+    <groupId>custom.wotreplayparser.library</groupId>
+    <artifactId>WotreplayParser</artifactId>
+    <version>1.1-SNAPSHOT</version>
 </dependency>
 ```
 
