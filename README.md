@@ -29,7 +29,7 @@ To use the WOTReplay Parser library in your project, add the following dependenc
 ```
 
 ### Direct Download
-Alternatively, you can download the JAR file directly from the [releases page](https://github.com/913DavidGardos/WotreplayParser/blob/main/target/WotreplayParser-1.1-SNAPSHOT.jar) and include it in your project manually.
+Alternatively, you can download the JAR file directly from the [releases page](https://github.com/913DavidGardos/WotreplayParser/blob/main/target) and include it in your project manually.
 
 ## Usage
 Here's a simple example of how to use the WOTReplay Parser to extract information from a .wotreplay file:
