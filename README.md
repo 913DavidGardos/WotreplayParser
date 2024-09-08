@@ -44,7 +44,6 @@ Alternatively, you can download the JAR file directly from the [releases page](h
 Here's a simple example of how to use the WOTReplay Parser to extract information from a .wotreplay file:
 
 ```
-package org.example;
 import custom.wotreplayparser.library.WotreplayParser;
 import java.io.IOException;
 
