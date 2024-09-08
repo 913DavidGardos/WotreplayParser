@@ -5,36 +5,36 @@ This library provides a simple interface to access the key information stored wi
 
 ## Features
 
-*Extract basic information (e.g., map, game mode, version, etc.) from replays.
-*Access detailed player statistics and battle data.
-*Support for multiple replay file versions.
-*Lightweight and easy to integrate with other applications.
-*Error handling for corrupted or incomplete replay files.
+* Extract basic information (e.g., map, game mode, version, etc.) from replays.
+* Access detailed player statistics and battle data.
+* Support for multiple replay file versions.
+* Lightweight and easy to integrate with other applications.
+* Error handling for corrupted or incomplete replay files.
 
 ## Getting Started
 
-###Prerequisites
-*Java 8 or higher
-*Maven (if using Maven as the build tool)
+### Prerequisites
+* Java 8 or higher
+* Maven (if using Maven as the build tool)
 
-###Installation
-####Maven
+### Installation
+#### Maven
 To use the WOTReplay Parser library in your project, add the following dependency to your pom.xml:
-'''
+```
 <dependency>
     <groupId>com.example</groupId>
     <artifactId>wotreplay-parser</artifactId>
     <version>1.0.0</version>
 </dependency>
-'''
+```
 
-###Direct Download
+### Direct Download
 Alternatively, you can download the JAR file directly from the [releases page] and include it in your project manually.
 
-##Usage
+## Usage
 Here's a simple example of how to use the WOTReplay Parser to extract information from a .wotreplay file:
 
-'''
+```
 package org.example;
 import custom.wotreplayparser.library.WotreplayParser;
 import java.io.IOException;
@@ -52,7 +52,7 @@ public class Main {
         }
     }
 }
-'''
+```
 
 ## License
 This project is licensed under the MIT License
