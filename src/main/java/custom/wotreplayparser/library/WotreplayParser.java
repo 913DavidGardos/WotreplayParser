@@ -1,7 +1,7 @@
 package custom.wotreplayparser.library;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -13,40 +13,31 @@ public class WotreplayParser {
     private int metadataLength;
     private String personalStats;
     private int personalStatsLength;
-    public WotreplayParser(){
-    }
+    public WotreplayParser(){}
     public String getStringMetadata(){
         return this.metadata;
     }
     public String getStringPersonalStats(){
         return this.personalStats;
     }
-    public JsonNode getJsonNodeJacksonMetadata(){
-        JsonNode jsonNode = null;
+    public JsonElement getJsonNodeJacksonMetadata(){
+        JsonElement jsonElement = null;
         try {
-            // Create ObjectMapper instance
-            ObjectMapper objectMapper = new ObjectMapper();
-
-            // Convert JSON string to JsonNode (Jackson's JSON object representation)
-            jsonNode = objectMapper.readTree(this.metadata);
+            jsonElement = JsonParser.parseString(this.metadata);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return jsonNode;
+        return jsonElement;
     }
 
-    public JsonNode getJsonNodeJacksonPersonalStats(){
-        JsonNode jsonNode = null;
+    public JsonElement getJsonNodeJacksonPersonalStats(){
+        JsonElement jsonElement = null;
         try {
-            // Create ObjectMapper instance
-            ObjectMapper objectMapper = new ObjectMapper();
-
-            // Convert JSON string to JsonNode (Jackson's JSON object representation)
-            jsonNode = objectMapper.readTree(this.personalStats);
+            jsonElement = JsonParser.parseString(this.personalStats);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return jsonNode;
+        return jsonElement;
     }
     public void parse(int metadataByteLengthStartPos, int metadataByteLength, int personalStatsJsonOffset, String filePath) throws IOException {
         /// 07/09/2024
